@@ -95,7 +95,7 @@ class _NasaAppState extends State<NasaApp> {
   var solKey;
   var data;
   List weatherData = [];
-
+  // Get data in weather API
    getData() async {
     http.Response response = await http.get(
       Uri.encodeFull(url),
@@ -115,7 +115,7 @@ class _NasaAppState extends State<NasaApp> {
       print(weatherData);
     });
   }
-
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
